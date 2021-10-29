@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
     <title>Document</title>
 
     <style>
         * {
             font-family: 'Barlow';
             box-sizing: border-box;
+        }
+
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
         }
 
         body {
@@ -21,11 +28,20 @@
             background-size: cover;
             background-attachment: fixed;
         }
+
+        .maincontainer{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(56, 18, 5, 0.767);
+            background-size: cover;
+        }
+
         .header-container {
             width: 100%;
             height: 114px;
             margin-top: 80px;
             margin-bottom: 80px;
+            box-sizing: border-box;
         }
 
         .header-container div {
@@ -40,13 +56,15 @@
             font-weight: 800;
             color: #E6A756;
         }
-        .lowertitle{
+
+        .lowertitle {
             font-size: 80px;
             font-weight: 100;
             line-height: 64px;
             color: #f6e1c5;
         }
-        .nav-container{
+
+        .nav-container {
             width: 100%;
             height: 85px;
             display: flex;
@@ -55,31 +73,54 @@
             padding: 24px 0px;
             background-color: rgba(47, 23, 15, 0.9);
         }
+
+        .topmenu {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .topmenu li {
+            padding: 8px 32px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        a:hover {
+            color: #A69C99;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="uppertitle">
-                <span>a free bootstrap business theme</span>
-            </div>
-            <div class="lowertitle">
-                <span>business casual</span>
+    <div class="maincontainer">
+        <div>
+            <div class="header-container">
+                <div class="uppertitle">
+                    <span>a free bootstrap business theme</span>
+                </div>
+                <div class="lowertitle">
+                    <span>business casual</span>
+                </div>
             </div>
         </div>
-    </header>
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">PRODUCTS</a></li>
-                <li><a href="">STORE</a></li>
-            </ul>
-        </div>
-    </nav>
-
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="topmenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    </div>
+    
 </body>
 
 </html>
