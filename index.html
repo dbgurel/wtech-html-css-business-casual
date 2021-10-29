@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
-
     <title>Document</title>
 
     <style>
@@ -30,6 +28,7 @@
         }
 
         .maincontainer{
+            margin: 0px;
             height: 100%;
             width: 100%;
             background-color: rgba(56, 18, 5, 0.767);
@@ -48,6 +47,7 @@
             width: 100%;
             text-align: center;
             text-transform: uppercase;
+            box-sizing: inherit;
         }
 
         .uppertitle {
@@ -91,22 +91,39 @@
         }
 
         a:hover {
-            color: #A69C99;
+            color: #7a7776;
+        }
+        .section1{
+            width:100%;
+            margin: 80px 0px;
+            position: relative;
+            text-align: center;
+            
+        }
+        .section2{
+
+        }
+        footer{
+            height: 120px;
+            width: 100%;
+            padding: 48px 0px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            background-color: rgba(47, 23, 15, 0.9) ;
         }
     </style>
 </head>
 
 <body>
     <div class="maincontainer">
-        <div>
-            <div class="header-container">
+        <div class="header-container">
                 <div class="uppertitle">
                     <span>a free bootstrap business theme</span>
                 </div>
                 <div class="lowertitle">
                     <span>business casual</span>
                 </div>
-            </div>
         </div>
         <nav class="navbar">
             <div class="nav-container">
@@ -118,7 +135,23 @@
                 </ul>
             </div>
         </nav>
-    
+        <div class="section1">
+            <img src="" alt="">
+            <div class="content1">
+                <h3>Fresh Coffee</h3>
+                <p>worth drinking</p>
+                <br>
+                <p>Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, alias qui maiores a, modi consectetur earum nemo tempora quaerat debitis eius reprehenderit nisi accusantium quia quam cupiditate est officiis voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, modi, illo blanditiis et consequatur aliquam quas quae dolorem nulla dolores debitis aperiam illum assumenda veritatis molestias deleniti distinctio, rem perferendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus nisi fuga quis mollitia at unde, perferendis iusto doloribus veniam libero vitae sed aliquam provident voluptates error iure eum rem maxime. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quibusdam quae similique provident accusantium, ipsum quia iure voluptatem harum odio ab voluptate praesentium laboriosam voluptatibus nam, delectus eum quos obcaecati. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio iste hic aperiam maxime consequatur. Perspiciatis magnam odit, eveniet quis quam laboriosam natus voluptates, commodi similique et provident animi, earum ipsum!</p>
+                <div class="box">
+                    <button>Visit Us Today!</button>
+                </div>
+            </div>
+        </div>
+        <div class="section2"></div>
+        <footer>
+            <p>Copyright © Your Website 2021</p>
+        </footer>
     </div>
     
 </body>
