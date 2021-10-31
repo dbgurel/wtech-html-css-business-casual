@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Barlow';
+            box-sizing: border-box;
+        }
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            margin: 0px;
+            background-image: url(bg.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .maincontainer {
+            margin: 0px;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(56, 18, 5, 0.6);
+            background-size: cover;
+        }
+
+        .header-container {
+            display: block;
+            height: auto;
+            padding-top: 80px;
+            margin-bottom: 80px;
+            box-sizing: border-box;
+        }
+
+        .header-container div {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .uppertitle {
+            margin-bottom: 16px;
+            font-size: 32px;
+            font-weight: 800;
+            color: #E6A756;
+        }
+
+        .lowertitle {
+            font-size: 80px;
+            font-weight: 100;
+            line-height: 64px;
+            color: #f6e1c5;
+        }
+
+        .nav-container {
+            width: 100%;
+            height: 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px 0px;
+            background-color: rgba(47, 23, 15, 0.9);
+        }
+
+        .topmenu {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .topmenu li {
+            padding: 8px 32px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        a:hover {
+            color: #7a7776;
+        }
+
+        .content-container {
+            width: 100%;
+            height: 780px;
+            margin: 80px 0px;
+            padding-right: 6%;
+            position: relative;
+            text-align: center;
+        }
+
+        .about-image {
+            width: 100%;
+        }
+
+        .about-image img {
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .contentbox {
+
+            position: absolute;
+            padding: 12px 0px;
+            left: 23.5%;
+            top: 56%;
+        }
+
+        .content {
+            width: 69%;
+            margin: 8px;
+            padding: 48px;
+            background-color: #f6e1c5;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+
+        }
+
+        footer {
+            height: 120px;
+            width: 100%;
+            margin-top: 80px;
+            padding: 48px 0px;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+            background-color: rgba(47, 23, 15, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="maincontainer">
+        <header class="header-container">
+            <div class="uppertitle">
+                <span>a free bootstrap business theme</span>
+            </div>
+            <div class="lowertitle">
+                <span>business casual</span>
+            </div>
+        </header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="topmenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-container">
+            <div class="about-image">
+                <img src="about_img1.jpg" alt="">
+            </div>
+            <div class="contentbox">
+                <div class="content">
+                    <h2><span>STRONG COFFEE, STRONG ROOTS</span></h2>
+                    <span>ABOUT OUR CAFE</span>
+                    <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee
+                        sourced from artisan farmers in various regions of South and Central America. We are dedicated
+                        to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
+                    <p>We guarantee that you will fall in lust with our decadent blends the moment you walk inside until
+                        you finish your last sip. Join us for your daily routine, an outing with friends, or simply just
+                        to enjoy some alone time.</p>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <p>Copyright © Your Website 2021</p>
+        </footer>
+
+</body>
+
+</html>
