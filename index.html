@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
-    <title>Document</title>
-
+    <title>Home Page</title>
     <style>
         * {
             font-family: 'Barlow';
             box-sizing: border-box;
         }
 
-        a, a:hover, a:focus, a:active {
+        a,
+        a:hover,
+        a:focus,
+        a:active {
             text-decoration: none;
             color: inherit;
         }
@@ -27,7 +29,7 @@
             background-attachment: fixed;
         }
 
-        .maincontainer{
+        .maincontainer {
             margin: 0px;
             height: 100%;
             width: 100%;
@@ -93,36 +95,94 @@
         a:hover {
             color: #7a7776;
         }
-        .section1{
-            width:100%;
+
+        .section1 {
+            width: 100%;
+            height: 648px;
             margin: 80px 0px;
             padding-right: 6%;
             position: relative;
             text-align: center;
         }
-        .section1 img{
+
+        .section1 img {
             float: right;
-            width: 65%;
+            width: 50.5%;
             height: auto;
+            position: absolute;
+            right: 15%;
         }
-        .content1{
+
+        .content1 {
             margin: 48px 0px 0px;
+            padding: 48px;
             background-color: #fff;
+            color: #000;
             border-radius: 5px;
             z-index: 2;
-            width: 40% ;
+            width: 30%;
+            position: relative;
+            left: 21%;
+            top: 7%;
         }
-        .section2{
+
+        .content1 h3 {
+            font-size: 18px;
+            font-weight: 600 !important;
+        }
+
+        .box {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -10%;
+        }
+
+        .box button {
+            background-color: #E6A756;
+            border: none;
+            border-radius: 5px;
+            font-weight: 500;
+            padding: 4%;
 
         }
-        footer{
+
+        .section2 {
+            width: 100%;
+            height: 456px;
+            margin: 80px 0px;
+            padding: 80px 0px;
+            background-color: #E6A756E6;
+        }
+
+        .section2-container {
+            margin: 0px 25%;
+        }
+
+        .content2 {
+            margin: 8px;
+            padding: 48px;
+            background-color: #f6e1c5;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: #E5AD63;
+            position: relative;
+        }
+
+        footer {
             height: 120px;
             width: 100%;
             padding: 48px 0px;
             color: #fff;
             font-size: 14px;
             text-align: center;
-            background-color: rgba(47, 23, 15, 0.9) ;
+            background-color: rgba(47, 23, 15, 0.9);
         }
     </style>
 </head>
@@ -148,19 +208,35 @@
             </div>
         </nav>
         <div class="section1">
-            <img src="intro.jpg" alt="">
+            <div><img src="intro.jpg" alt=""></div>
             <div class="content1">
-                <h3>Fresh Coffee</h3>
-                <p>worth drinking</p>
-                <br>
-                <p>Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!</p>
-                
+                <h3 style="margin-bottom: 0px; font-size: 18px;"> <strong>Fresh Coffee</strong> </h3>
+                <p style="font-size: 48px; text-transform: uppercase; margin-top: 0; margin-bottom: 20px;">worth drinking
+                </p>
+                <p>Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once
+                    you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee
+                    it!</p>
+
                 <div class="box">
-                    <button>Visit Us Today!</button>
+                    <button><strong>Visit Us Today!</strong></button>
                 </div>
             </div>
         </div>
-        <div class="section2"></div>
+        <div class="section2">
+            <div class="section2-container">
+                <div class="content2">
+                   <div class="box2">
+                     <h2><span>OUR PROMISE</span></h2>
+                     <span>TO YOU</span>
+                     <p>When you walk into our shop to start your day, we are dedicated to providing you with friendly
+                        service, a welcoming atmosphere, and above all else, excellent products made with the highest
+                        quality ingredients. If you are not satisfied, please let us know and we will do whatever we can
+                        to make things right!</p>
+                   </div>
+                    
+                </div>
+            </div>
+        </div>
         <footer>
             <p>Copyright © Your Website 2021</p>
         </footer>
